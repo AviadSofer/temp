@@ -1,4 +1,5 @@
 export type UserUpdateInput = {
+  city?: string | null;
   firstName?: string | null;
   lastName?: string | null;
   password?: string;

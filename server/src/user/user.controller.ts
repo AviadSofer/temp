@@ -61,6 +61,7 @@ export class UserController {
       ...query,
       data: data,
       select: {
+        city: true,
         createdAt: true,
         firstName: true,
         id: true,
@@ -96,6 +97,7 @@ export class UserController {
     const results = await this.service.findMany({
       where: query,
       select: {
+        city: true,
         createdAt: true,
         firstName: true,
         id: true,
@@ -135,6 +137,7 @@ export class UserController {
       ...query,
       where: params,
       select: {
+        city: true,
         createdAt: true,
         firstName: true,
         id: true,
@@ -196,6 +199,7 @@ export class UserController {
         where: params,
         data: data,
         select: {
+          city: true,
           createdAt: true,
           firstName: true,
           id: true,
@@ -236,6 +240,7 @@ export class UserController {
         ...query,
         where: params,
         select: {
+          city: true,
           createdAt: true,
           firstName: true,
           id: true,
