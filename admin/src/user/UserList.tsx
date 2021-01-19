@@ -32,6 +32,11 @@ const FIELDS: DataField[] = [
     sortable: false,
   },
   {
+    name: "city",
+    title: "City",
+    sortable: false,
+  },
+  {
     name: "createdAt",
     title: "Created At",
     sortable: false,
@@ -99,6 +104,9 @@ export const UserList = (): React.ReactElement => {
                   <Link className="entity-id" to={`${"/users"}/${item.id}`}>
                     {item.id}
                   </Link>
+                </DataGridCell>
+                <DataGridCell>
+                  <>{item.city}</>
                 </DataGridCell>
                 <DataGridCell>
                   <TimeSince time={item.createdAt} />

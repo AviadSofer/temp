@@ -74,6 +74,7 @@ export const User = (): React.ReactElement => {
   const initialValues = React.useMemo(
     () =>
       pick(data, [
+        "city",
         "firstName",
         "lastName",
         "password",
@@ -117,6 +118,9 @@ export const User = (): React.ReactElement => {
               </FormHeader>
             }
           >
+            <div>
+              <TextField label="City" name="city" />
+            </div>
             <div>
               <TextField label="First Name" name="firstName" />
             </div>

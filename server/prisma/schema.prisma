@@ -35,6 +35,7 @@ model Task {
 }
 
 model User {
+  city      String?
   createdAt DateTime  @default(now())
   firstName String?
   id        String    @id @default(cuid())

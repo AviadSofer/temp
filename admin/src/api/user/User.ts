@@ -1,4 +1,5 @@
 export type User = {
+  city: string | null;
   createdAt: Date;
   firstName: string | null;
   id: string;

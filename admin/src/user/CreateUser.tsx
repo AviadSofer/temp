@@ -58,6 +58,9 @@ export const CreateUser = (): React.ReactElement => {
           }
         >
           <div>
+            <TextField label="City" name="city" />
+          </div>
+          <div>
             <TextField label="First Name" name="firstName" />
           </div>
           <div>
